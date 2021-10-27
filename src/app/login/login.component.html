@@ -1,0 +1,77 @@
+<div class="container w-75 bgr mt-5 rounded shadow">
+    <div class="row align-items-stretch">
+      <div class="col bg-img mt-2 d-none d-lg-block">
+        <img src='assets/logoo.jpg' class="img-fluid" alt="log img">
+      </div>
+      <div class="col">
+        <div class="text-end">
+          <img src='assets/logoo.jpg' width="48" alt="">
+        </div>
+
+        <h2 class="fw-bold text-center py-5">Welcome</h2>
+        <p class="fw-bold">Inssite, a study platform created with an innovative way of learningand better interaction with teachers.</p>
+        <br>
+
+        <!-- login-->
+
+        <div class="mb-4">
+          <form [formGroup]="loginForm" (ngSubmit)='onLogin(loginForm.value)'>
+            <label for="user" class="form-label">Usuario :</label>
+            <input type="text" class="form-control" formControlName="username">
+            
+            <div class="mb-4">
+              <label for="password" class="form-label">Password :</label>
+              <input type="password" class="form-control" formControlName="password" >
+            </div>
+            <div class="mb-4 form-check">
+              <input type="checkbox" name="connected" class="form-check-input">  
+              <label for="connected" class="form-check-label"> Remind me</label>     
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-dark">Login</button>
+            </div>
+
+            <div class="my-3">
+                <span>Dont have an account? <a class ="text-white-50" href="#"> Sign up</a></span><br>
+            </div>
+          </form>
+        </div>
+
+
+      <!-- Login con redes sociales -->
+      <div class="container w-100 my-5">
+          <div class="row text-center">
+              <div class="col-12">Iniciar Sesion</div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <button class="btn btn-outline-light w-100 my-1">
+                    <div class="row align-items-center">
+                        <div class="col-2">
+                            <img src="https://img.icons8.com/ios-glyphs/480/facebook.png" width="32" alt="">
+                        </div>
+
+                        <div class="col-10 text-center">
+                            Facebook
+                        </div>
+                    </div>
+                  </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-light w-100 my-1">
+                  <div class="row align-items-center">
+                      <div class="col-2">
+                          <img src="https://icones.pro/wp-content/uploads/2021/02/google-icone-symbole-png-logo-noir.png" width="32" alt="">
+                      </div>
+
+                      <div class="col-10 text-center">
+                          Google
+                      </div>
+                  </div>
+                </button>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+ </div>
